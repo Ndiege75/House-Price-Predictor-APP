@@ -58,7 +58,7 @@ st.markdown("This interactive dashboard allows you to predict house prices and e
 # --------------------------------------------------
 @st.cache_data
 def load_data():
-    return pd.read_csv("D:\Housing.csv")
+    return pd.read_csv("Housing.csv")
 
 data = load_data()
 
@@ -588,3 +588,4 @@ if app_mode == "🔍 Price Predictor":
             file_name=f"housing_prediction_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.txt",
             mime="text/plain"
         )
+
